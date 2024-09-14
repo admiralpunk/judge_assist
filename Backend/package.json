@@ -1,0 +1,46 @@
+{
+  "name": "judging-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "start": "nodemon src/index.ts",
+    "start-on-heroku": "node ./build/index.js",
+    "build": "tsc",
+    "serve": "tsc && node build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.14",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^18.11.0",
+    "@types/node-cron": "^3.0.11",
+    "@types/node-fetch": "^2.6.2",
+    "@types/nodemailer": "^6.4.14",
+    "@types/request": "^2.48.12",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.20.0",
+    "form-data": "^4.0.0",
+    "helmet": "^6.0.0",
+    "http": "0.0.1-security",
+    "mongodb": "^6.8.1",
+    "mongoose": "^8.6.1",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.9.13",
+    "pg": "^8.12.0",
+    "request": "^2.88.2",
+    "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.2",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2"
+  }
+}
