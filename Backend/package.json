@@ -8,7 +8,7 @@
     "dev": "nodemon --exec ts-node src/index.ts",
     "start": "nodemon src/index.ts",
     "start-on-heroku": "node ./build/index.js",
-    "start-on-render": "node build/index.js"
+    "start-on-render": "node build/index.js",
     "build": "tsc",
     "serve": "tsc && node build/index.js"
   },
