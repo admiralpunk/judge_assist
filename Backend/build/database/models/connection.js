@@ -17,7 +17,8 @@ const pg_1 = require("pg");
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 exports.client = new pg_1.Pool({
-    connectionString: process.env.POSTGRES_URL
+    // connectionString: process.env.POSTGRES_URL
+    connectionString: 'postgresql://postgres.fgsyfocqcejybiivrenw:aniket1k2k3k@aws-0-ap-south-1.pooler.supabase.com:6543/postgres'
 });
 function connectToDatabase() {
     return __awaiter(this, void 0, void 0, function* () {
