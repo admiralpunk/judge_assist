@@ -35,7 +35,7 @@ if (process.env.NODE_ENV === 'dev') {
     app.use("/dev/api/judge", judge_routes_1.JudgeRouter);
 }
 else {
-    app.get('/api/admin', admin_routes_1.adminRoutes);
+    app.use('/api/admin', admin_routes_1.adminRoutes);
     app.use("/dev/api/judge", judge_routes_1.JudgeRouter);
 }
 app.get('/ping', (req, res) => {
