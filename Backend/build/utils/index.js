@@ -20,12 +20,12 @@ const sendMail = (to, event, text) => __awaiter(void 0, void 0, void 0, function
     const transporter = nodemailer_1.default.createTransport({
         service: 'gmail',
         auth: {
-            user: process.env.MAIL_USERNAME,
-            pass: process.env.MAIL_PASSWORD
+            user: "kolteaniket79@gmail.com",
+            pass: "zmwmjkpnmafzsvjv"
         }
     });
     const mailOptions = {
-        from: `"${event.toUpperCase}" ${process.env.MAIL_USERNAME}`,
+        from: `"${event.toUpperCase}" ${"kolteaniket79@gmail.com"}`,
         to: to,
         subject: `Welcome to ${event.toUpperCase()}`,
         html: text
