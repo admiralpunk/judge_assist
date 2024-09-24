@@ -8,13 +8,13 @@ interface SendMail {
 }
 
 export const sendMail: SendMail = async (to, event, text) => {
-    const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: process.env.MAIL_USERNAME,
-            pass: process.env.MAIL_PASSWORD
-        }
-    });
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: "kolteaniket79@gmail.com",
+      pass: "zmwmjkpnmafzsvjv",
+    },
+  });
 
 
     const mailOptions = {
